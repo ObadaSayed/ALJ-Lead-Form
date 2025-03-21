@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Lead Capture Form</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <main>
+        <form id="leadForm">
+            <div class="form-group">
+                <label for="individualCustomerGivenName">Given Name:</label>
+                <input type="text" id="individualCustomerGivenName" name="IndividualCustomerGivenName" value="Obada">
+            </div>
+            <div class="form-group">
+                <label for="individualCustomerFamilyName">Family Name:</label>
+                <input type="text" id="individualCustomerFamilyName" name="IndividualCustomerFamilyName" value="Sayed">
+            </div>
+            <div class="form-group">
+                <label for="individualCustomerEMail">Email:</label>
+                <input type="email" id="individualCustomerEMail" name="IndividualCustomerEMail" value="obada.sayed@sap.com">
+            </div>
+            <div class="form-group">
+                <label for="individualCustomerPhone">Phone:</label>
+                <input type="tel" id="individualCustomerPhone" name="IndividualCustomerPhone" value="+971565489533">
+            </div>
+            <div class="form-group">
+                <label for="individualCustomerAddressCity">City:</label>
+                <select id="individualCustomerAddressCity" name="IndividualCustomerAddressCity">
+                    <option value="Riyadh">Riyadh</option>
+                    <option value="Jeddah">Jeddah</option>
+                    <option value="Mecca">Mecca</option>
+                    <option value="Medina">Medina</option>
+                    <option value="Dammam">Dammam</option>
+                    <option value="Taif">Taif</option>
+                    <option value="Khobar">Khobar</option>
+                    <option value="Tabuk">Tabuk</option>
+                    <option value="Abha">Abha</option>
+                    <option value="Qatif">Qatif</option>
+                </select>
+            </div>
+
+            <!-- Model Dropdown -->
+            <div class="form-group">
+                <label for="model2_KUT">Toyota Model:</label>
+                <select id="model2_KUT" name="Model2_KUT">
+                    <option value="TY-HIGHLANDER">Toyota Highlander</option>
+                    <option value="TY-COROLLA">Toyota Corolla</option>
+                    <option value="TY-CAMRY">Toyota Camry</option>
+                    <option value="TY-PRADO">Toyota Land Cruiser Prado</option>
+                    <option value="TY-RAV4">Toyota RAV4</option>
+                    <option value="TY-YARIS">Toyota Yaris</option>
+                    <option value="TY-FORTUNER">Toyota Fortuner</option>
+                    <option value="TY-LANDCRUISER">Toyota Land Cruiser</option>
+                    <option value="TY-RAIZE">Toyota Raize</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
