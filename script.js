@@ -24,7 +24,7 @@ form.addEventListener('submit', async (event) => {
     },
     "products": [
       {
-        "displayId": modelValue,
+        "displayId": "TY-RAV4",
         "quantity": {
           "content": 1,
           "unitCode": "EA",
@@ -60,8 +60,10 @@ form.addEventListener('submit', async (event) => {
 
     if (response.ok) {
       const responseData = await response.json();
+      const leadNumber = responseData.value.displayId;
       console.log('Lead submitted successfully:', responseData);
-      alert('Lead submitted successfully!');
+      alert(`Lead #${leadNumber} has been created successfully!`);
+      form.reset(); // Optional: reset the form after successful submission
     } else {
       const errorData = await response.text();
       console.error('API responded with an error:', errorData);
